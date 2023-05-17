@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swati Thorat | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,23 +22,27 @@
                 <div class="header_logo_img-container">
                     <img src="images/MyPhoto.png" alt="Swati Thorat Image" class="header_logo_img-container">
                 </div>
-                <span class="logo_name">Swati Thorat</span>
+                <span class="header_logo_name">Swati Thorat</span>
             </div>
             <div class="header_main">
                 <ul class="header_links">
                     <li class="header_link">
-                        <a href="./">Home</a>
+                        <a href="./" class="header_a_link">Home</a>
                     </li>
                     <li class="header_link">
-                        <a href="./#about">About</a>
+                        <a href="./#about" class="header_a_link">About</a>
                     </li>
                     <li class="header_link">
-                        <a href="./#projects">Projects</a>
+                        <a href="./#projects" class="header_a_link">Projects</a>
                     </li>
                     <li class="header_link">
-                        <a href="./#contact">Contact</a>
+                        <a href="./#contact" class="header_a_link">Contact</a>
                     </li>
+                    <div class="toggleBtn_container">
+                        <input type="checkbox" id="toggle" class="toggle">
+                    </div>
                 </ul>
+
                 <div class="header_hamburgerMenu">
                     <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
                         alt="hamburger menu" class="header__main-ham-menu">
@@ -39,9 +50,49 @@
                         alt="hamburger menu close" class="header__main-ham-menu-close d-none">
                 </div>
             </div>
-
         </div>
+        <!-- <div class="header_sideMenu">
+            <div class="header_menuContent">
+                <ul class="header_menuLinks">
+                    <li class="header_sidemenu_link"></li>
+                    <li class="header_sidemenu_link"></li>
+                    <li class="header_sidemenu_link"></li>
+                </ul>
+            </div>
+        </div> -->
     </header>
+
+    <section class="home_hero">
+        <div class="home_hero_content">
+            <h1>Hey, I'm Swati Thorat</h1>
+            <div class="home_hero_info">
+                <p>
+                    A highly motivated and self-taught frontend web developer.
+                </p>
+            </div>
+        </div>
+        <div class="home_hero_socialLinks">
+            <div class="home_hero_social_link">
+                <a href="https://www.linkedin.com/in/swati-thorat-27a3944b/" class="home_hero_socialIcon_link"
+                    target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
+                        alt="Swati Thorat LinkedIn" class="home_hero_social_iconImg">
+                </a>
+            </div>
+            <div class="home_hero_social_link">
+                <a href="https://twitter.com/swatic019" class="home_hero_socialIcon_link" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
+                        alt="Swati Thorat Twitter" class="home_hero_social_iconImg">
+                </a>
+            </div>
+            <div class="home_hero_social_link">
+                <a href="https://github.com/SwatiThorat21" class="home_hero_socialIcon_link" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
+                        alt="Swati Thorat Github" class="home_hero_social_iconImg">
+                </a>
+            </div>
+        </div>
+    </section>
 
 </body>
 
