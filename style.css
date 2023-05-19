@@ -64,7 +64,7 @@ body {
   list-style: none;
 }
 .header_a_link {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   display: inline-block;
   font-size: 1.4rem;
   color: #333;
@@ -83,18 +83,18 @@ a {
   width: 100%;
   height: 40px;
   position: relative;
+  list-style: none;
+  margin: 2rem 2rem;
 }
 .toggle {
   appearance: none;
   height: 40px;
   width: 75px;
   background-color: #15181f;
-  position: absolute;
-  /* right: 0; */
   border-radius: 20px;
   outline: none;
   cursor: pointer;
-}
+ }
 .toggle:after {
   content: "";
   position: absolute;
@@ -126,7 +126,7 @@ a {
   width: 92%;
 }
 .hero_content_heading {
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -139,7 +139,7 @@ a {
 }
 .home_hero_info p {
   color: #333;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
   width: 100%;
   line-height: 1.6;
@@ -167,4 +167,7 @@ a {
 .home_hero_socialIcon_link:hover {
   background-color: #f2de88;
 }
-
+.aboutMe{
+  background: #fafafa;
+  padding: 10rem 0;
+}
