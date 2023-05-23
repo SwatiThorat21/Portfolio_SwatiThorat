@@ -280,7 +280,7 @@ a {
 .projects_content {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   justify-content: center;
 }
 
@@ -343,8 +343,8 @@ a {
 }
 .cardInfo_icons_container{
   display: flex;
-  gap: 2.5rem;
   margin: 1rem 0;
+  justify-content: space-around;
 }
 .cardBtn_icon{
   outline: none;
@@ -367,4 +367,7 @@ a {
   padding: 5px 1rem;
   
 }
-
+/* .expandArrow{
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+} */
