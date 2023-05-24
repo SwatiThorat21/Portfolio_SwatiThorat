@@ -291,11 +291,11 @@ a {
   /* width: 100%;
   height: auto; */
   float: left;
-  width:  15rem;
+  width: 15rem;
   height: 10rem;
   object-fit: cover;
 }
-.card_top{
+.card_top {
   height: 15rem;
   display: flex;
   flex-direction: column;
@@ -314,24 +314,24 @@ a {
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px,
     rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.projectCard_heading{
+.projectCard_heading {
   font-size: 1.2rem;
   font-weight: 500;
   color: #2c2929;
   padding: 0.7rem;
 }
-.project_skills{
+.project_skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
 }
-.project_skill{
+.project_skill {
   padding: 0.4rem 0.4rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
@@ -341,33 +341,51 @@ a {
   font-weight: 600;
   color: #666;
 }
-.cardInfo_icons_container{
-  display: flex;
+.cardInfo_icons_container {
   margin: 1rem 0;
-  justify-content: space-around;
 }
-.cardBtn_icon{
+.cardInfo_icons_container.is_expanded .fa-angle-up{
+  display: none;
+}
+
+.cardInfo_icons_container .fa-angle-up{
+  display: block;
+}
+.cardInfo_icons_container.is_expanded .fa-angle-down{
+  display: block;
+}
+
+.cardInfo_icons_container .fa-angle-down{
+  display: none;
+}
+.cardInfo_icons_container.is_expanded .project_info{
+  display: block;
+}
+.cardInfo_icons_container .project_info{
+  display: none;
+}
+.cardBtn_icon {
   outline: none;
   border: none;
   font-size: 1.2rem;
   background-color: white;
   color: rgba(153, 153, 153, 0.2);
+  margin-left: 1.8rem;
 }
-.cardIcon{
+.cardIcon {
   color: rgb(83, 83, 83);
   cursor: pointer;
   padding: 0.6rem;
   border-radius: 50%;
   transition: background-color 0.3s;
 }
-.cardIcon:hover{
+.cardIcon:hover {
   background-color: #f2de88;
 }
-.project_info_para{
+.project_info_para {
   padding: 5px 1rem;
-  
 }
-/* .expandArrow{
+/* .infoExpandArrow{
   transform: rotate(180deg);
   transition: 0.3s ease-in-out;
 } */

@@ -1,9 +1,9 @@
-let expandArrow = document.querySelectorAll('.expandArrow');
+let arrow = document.querySelectorAll(".arrow");
 
-expandArrow.forEach((arrow)=>{
-    arrow.addEventListener('click',(event)=>{
-        let clickedArrow = event.currentTarget;
-       
-
-    })
-})
+arrow.forEach((arrow) => {
+  arrow.addEventListener("click", (event) => {
+    let clickedArrow = event.currentTarget;
+    let parentDiv = clickedArrow.parentNode;
+    parentDiv.classList.toggle("is_expanded");
+  });
+});
