@@ -53,8 +53,13 @@ body {
 }
 .header_hamburgerMenu {
   display: none;
-  width: 3rem;
-  padding: 2.2rem 0;
+  width: 2.5rem;
+  padding: 0.7rem 0;
+}
+.header__main-ham-menu-close-contain {
+  display: none;
+  width: 2.5rem;
+  padding: 0.7rem 0;
 }
 .header_links {
   display: flex;
@@ -104,6 +109,31 @@ a {
   left: 7px;
   border-radius: 50%;
 }
+.header_sideMenu {
+  display: none;
+}
+.header_sidemenu_link {
+  list-style: none;
+}
+.header_sidemenu_link:first-child a{
+  border-top: 1px solid #eee;
+}
+.header_sidemenu_link a{
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+.header_sidemenu_link a:hover{
+  color:#facf0f;
+}
 .home_hero {
   background: linear-gradient(
       to right,
@@ -112,8 +142,8 @@ a {
     ),
     url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
   background-position: center;
-  /* height: 60vh; */
-  min-height: 42rem;
+  height: 100vh;
+  min-height: 27rem;
   max-height: 90rem;
   position: relative;
 }
@@ -285,15 +315,15 @@ a {
   align-items: center;
 }
 
-/* .project_img_container {
-  width: 15rem;
-} */
-.project_image {
-  /* width: 100%;
-  height: auto; */
-  float: left;
+.project_img_container {
   width: 15rem;
   height: 10rem;
+}
+.project_image {
+  width: 100%;
+  /* height: auto; */
+  float: left;
+  height: 100%;
   object-fit: cover;
 }
 .card_top {
@@ -318,8 +348,13 @@ a {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  min-height: 342px;
+  min-height: 300px;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.card_heading_contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .projectCard_heading {
   font-size: 1.2rem;
@@ -338,7 +373,7 @@ a {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   font-size: 0.8rem;
-  background: rgba(153, 153, 153, 0.2);
+  background: #99999933;
   border-radius: 3px;
   font-weight: 600;
   color: #666;
@@ -370,7 +405,7 @@ a {
   font-size: 1.2rem;
   background-color: white;
   color: rgba(153, 153, 153, 0.2);
-  margin-left: 1.8rem;
+  margin-left: 2rem;
 }
 .cardIcon {
   color: rgb(83, 83, 83);
@@ -378,8 +413,7 @@ a {
   padding: 0.6rem;
   border-radius: 50%;
   transition: background-color 0.3s;
-  /* transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;; */
-  
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .cardIcon:hover {
   background-color: #f2de88;
@@ -445,7 +479,7 @@ a {
   background-position: center;
   height: 35vh;
 }
-.footer_comtainer{
+.footer_comtainer {
   background: #353131;
   color: #fff;
 }
@@ -466,20 +500,20 @@ a {
   border-radius: 5px;
   padding: 0.3rem;
 }
-.footer_upper{
+.footer_upper {
   text-align: center;
   padding: 2rem;
 }
-.footer_heading{
+.footer_heading {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.footer_social_link_iconImg{
+.footer_social_link_iconImg {
   width: 1.5rem;
   margin-right: 0.7rem;
 }
-.footer_lower{
+.footer_lower {
   padding: 2rem 0;
   border-top: 1px solid #444;
   color: #eee;
@@ -487,9 +521,212 @@ a {
   text-align: left;
   text-align: center;
 }
-.footer_lower a{
+.footer_lower a {
   text-decoration: underline;
   font-weight: 700;
   margin-left: 2px;
   color: #eee;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header_a_link {
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
+  }
+  .toggleBtn_container {
+    height: 25px;
+  }
+  .toggle {
+    height: 25px;
+    width: 50px;
+  }
+  .toggle:after {
+    height: 18px;
+    width: 18px;
+  }
+  .home_hero_socialLinks {
+    padding: 0.5rem 1rem 0.5rem 0.3rem;
+  }
+  .home_hero_social_link {
+    width: 1.8rem;
+  }
+  .home_hero_socialIcon_link {
+    padding: 0.3rem;
+  }
+  .hero_content_heading {
+    font-size: 2.8rem;
+  }
+  .home_hero_info {
+    margin: 2.5rem auto 0 auto;
+  }
+  .home_hero_info p {
+    font-size: 1.2rem;
+  }
+  .aboutMe_container {
+    width: 90%;
+  }
+  .projects_card {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .projects_card {
+    width: 27%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .projects_card {
+    width: 33%;
+  }
+  .header_logo_img-container {
+    width: 3rem;
+    height: 3rem;
+  }
+  .header_logo_name {
+    font-size: 1rem;
+  }
+  .hero_content_heading {
+    font-size: 2.4rem;
+  }
+  .home_hero_info {
+    margin: 2rem auto 0 auto;
+  }
+  .home_hero_info p {
+    font-size: 1rem;
+  }
+  .aboutMe {
+    padding: 5rem 0;
+  }
+  .aboutMe_heading {
+    font-size: 2.2rem;
+  }
+  .aboutMe_main_title {
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+  }
+  .aboutMe_skills_title {
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+  }
+  .skill {
+    padding: 0.3rem 0.7rem;
+  }
+  .projects_heading_main,
+  .resume_heading {
+    font-size: 2.2rem;
+    margin-bottom: 2.7rem;
+  }
+  .header_Content {
+    padding: 0.3rem 2.5rem;
+  }
+  .aboutMe_container {
+    width: 88%;
+  }
+  .aboutMe_main_info_para {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects_card {
+    width: 42%;
+  }
+  .project_img_container {
+    width: 13.7rem;
+    height: 9rem;
+  }
+  .header_logo_img-container {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header_logo_name {
+    font-size: 0.7rem;
+  }
+  .header_a_link {
+    padding: 0.8rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  .toggleBtn_container {
+    height: 20px;
+  }
+  .toggle {
+    height: 20px;
+    width: 40px;
+  }
+  .toggle:after {
+    height: 13px;
+    width: 13px;
+  }
+  .home_hero_socialLinks {
+    padding: 0.3rem 0.8rem 0.3rem 0.2rem;
+  }
+  .home_hero_social_link {
+    width: 1.5rem;
+    margin: 0.3rem 0;
+  }
+  .hero_content_heading {
+    font-size: 2rem;
+  }
+  .home_hero_info {
+    margin: 1.6rem auto 0 auto;
+  }
+  .home_hero_info p {
+    font-size: 0.85rem;
+  }
+  .aboutMe {
+    padding: 3rem 0;
+  }
+  .aboutMe_heading {
+    font-size: 1.9rem;
+    margin-bottom: 3.3rem;
+  }
+  .aboutMe_content {
+    grid-template-columns: none;
+    gap: 4rem;
+  }
+  .card_top {
+    height: 13.5rem;
+  }
+  .cardBtn_icon {
+    margin-left: 1.7rem;
+  }
+  .projects_heading_main,
+  .resume_heading {
+    font-size: 1.9rem;
+    margin-bottom: 3.3rem;
+  }
+  .open_resume_container {
+    font-size: 1rem;
+  }
+  .footer_heading {
+    font-size: 1.1rem;
+  }
+  .footer_lower {
+    padding: 1.4rem 0;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  .header_hamburgerMenu {
+    display: block;
+  }
+  .header_links {
+    display: none;
+  }
+  .header__main-ham-menu-close-contain {
+    display: none;
+  }
+  .header_sideMenu {
+    display: block;
+  }
+  .header_Content{
+    position: relative;
+  }
+  .hamburger_container{
+    position: absolute;
+    top: 0;
+  }
 }
