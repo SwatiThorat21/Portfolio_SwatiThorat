@@ -54,7 +54,7 @@ body {
 .header_hamburgerMenu {
   display: none;
   width: 2.5rem;
-  padding: 0.7rem 0;
+  /* padding: 0.7rem 0; */
 }
 .header__main-ham-menu-close-contain {
   display: none;
@@ -111,18 +111,20 @@ a {
 }
 .header_sideMenu {
   display: none;
+  transition: all .3s;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
 }
 .header_sidemenu_link {
   list-style: none;
 }
-.header_sidemenu_link:first-child a{
+.header_sidemenu_link:first-child a {
   border-top: 1px solid #eee;
 }
-.header_sidemenu_link a{
+.header_sidemenu_link a {
   display: block;
   text-decoration: none;
-  padding: 1.5rem 2rem;
-  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
   color: #333;
   text-align: right;
   border-bottom: 1px solid #eee;
@@ -131,8 +133,8 @@ a {
   letter-spacing: 2px;
   transition: color 0.3s;
 }
-.header_sidemenu_link a:hover{
-  color:#facf0f;
+.header_sidemenu_link a:hover {
+  color: #facf0f;
 }
 .home_hero {
   background: linear-gradient(
@@ -176,6 +178,7 @@ a {
 }
 
 .home_hero_socialLinks {
+  display: inline-block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -527,6 +530,9 @@ a {
   margin-left: 2px;
   color: #eee;
 }
+.header_hamburgerMenu_close_contain{
+  display: none;
+}
 
 @media only screen and (max-width: 1200px) {
   .header_a_link {
@@ -642,11 +648,11 @@ a {
     height: 2rem;
   }
   .header_logo_name {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .header_a_link {
     padding: 0.8rem 0.8rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .toggleBtn_container {
     height: 20px;
@@ -716,17 +722,88 @@ a {
   .header_links {
     display: none;
   }
-  .header__main-ham-menu-close-contain {
+  .header_hamburgerMenu_close_contain {
     display: none;
   }
-  .header_sideMenu {
+  .header_Content {
+    display: block;
+    position: relative;
+    padding: 0;
+  }
+  .header_logo_container {
+    padding: 0.7rem;
+  }
+  /* .hamburger_container {
+    position: absolute;
+    top: 19px;
+  } */
+  .header__main_ham_menu {
+    position: absolute;
+    left: 27rem;
+    top: 19px;
+  }
+  .header__main_ham_menu_close {
+    position: absolute;
+    left: 27rem;
+    top: 19px;
+  }
+  .header_main.toggle_hamburger_menu .header_hamburgerMenu_close_contain {
     display: block;
   }
-  .header_Content{
-    position: relative;
+  .header_main.toggle_hamburger_menu .header_sideMenu {
+    display: block;
+    transition: all .3s;
   }
-  .hamburger_container{
-    position: absolute;
-    top: 0;
+  .header_main.toggle_hamburger_menu .header_hamburgerMenu {
+    display: none;
+  }
+  .home_hero{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero_content_heading{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  .home_hero_info{
+    margin: 1.3rem auto 0 auto;
+  }
+  .home_hero_info p{
+    font-size: 0.75rem;
+  }
+  .home_hero_socialLinks{
+    top: 80%;
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem 0 0.8rem;
+  }
+  .aboutMe_heading, .projects_heading_main, .resume_heading{
+    font-size: 1.65rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+  }
+  .projectsSection{
+    padding: 3rem 0;
+  }
+  .projects_heading_sub{
+    font-size: 1rem;
+  }
+  .projects_card{
+    width: 55%;
+  }
+  .card_top{
+    height: 12.5rem;
+  }
+}
+
+@media only screen and (max-width: 444px){
+  .projects_card{
+    width: 75%;
+  }
+  .card_top{
+    height: 11.5rem;
   }
 }

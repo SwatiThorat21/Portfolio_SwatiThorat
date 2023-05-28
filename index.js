@@ -7,3 +7,13 @@ arrow.forEach((arrow) => {
     parentDiv.classList.toggle("is_expanded");
   });
 });
+
+let hamburger_container = document.getElementById('hamburger_container');
+let header_hamburgerMenu = document.querySelector('.header_hamburgerMenu');
+let header_hamburgerMenu_close_contain = document.querySelector('.header_hamburgerMenu_close_contain');
+
+hamburger_container.addEventListener('click', (event)=>{
+  let toggleMenu = event.currentTarget;
+  let parentDiv = toggleMenu.parentNode;
+   parentDiv.classList.toggle("toggle_hamburger_menu");
+})
