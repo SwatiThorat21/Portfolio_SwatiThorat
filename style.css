@@ -353,7 +353,6 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 300px;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .card_heading_contain {
   display: flex;
@@ -543,15 +542,15 @@ a {
 }
 .dark_theme #toggle:after {
   background-color: transparent;
-  box-shadow: 10px 10px #15181f;
-  top: -6px;
+  box-shadow: 8px 8px #15181f;
+  top: -5px;
   left: 20px;
 }
 .dark_theme .header {
   background-color: #18191a;
   color: #eee;
 }
-.dark_theme .header .header_sidemenu_link a{
+.dark_theme .header .header_sidemenu_link a {
   color: #eee;
 }
 .dark_theme .header .header_a_link {
@@ -609,24 +608,24 @@ a {
 .dark_theme .projectsSection .projects_card .cardBtn_icon {
   background-color: #e4e6eb;
 }
-.dark_theme .projectsSection .projects_card .project_info .project_info_para{
+.dark_theme .projectsSection .projects_card .project_info .project_info_para {
   color: #333;
 }
-.dark_theme .resume_container{
+.dark_theme .resume_container {
   background: linear-gradient(
-    to right,
-    rgba(88, 86, 86, 0.6),
-    rgba(110, 108, 108, 0.8)
-  ),
-  url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+      to right,
+      rgba(88, 86, 86, 0.6),
+      rgba(110, 108, 108, 0.8)
+    ),
+    url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
 }
-.dark_theme .resume_container .resume_heading{
+.dark_theme .resume_container .resume_heading {
   color: white;
 }
-.dark_theme .resume_container .open_resume_container a{
+.dark_theme .resume_container .open_resume_container a {
   color: white;
 }
-.dark_theme .resume_container .open_resume_container a:hover{
+.dark_theme .resume_container .open_resume_container a:hover {
   color: #2c2929;
 }
 @media only screen and (max-width: 1200px) {
@@ -668,6 +667,10 @@ a {
   }
   .projects_card {
     width: 25%;
+  }
+  .dark_theme #toggle::after {
+    box-shadow: 7px 7px #15181f;
+    top: -3px;
   }
 }
 
@@ -760,8 +763,10 @@ a {
     height: 13px;
     width: 13px;
   }
-  .dark_theme #toggle:after{
+  .dark_theme #toggle:after {
     left: 14px;
+    box-shadow: 6px 5px #15181f;
+    top: -2px;
   }
   .home_hero_socialLinks {
     padding: 0.3rem 0.8rem 0.3rem 0.2rem;
@@ -906,19 +911,19 @@ a {
   .card_top {
     height: 11.5rem;
   }
-  .header__main_ham_menu{
+  .header__main_ham_menu {
     left: 23rem;
   }
-  .header__main_ham_menu_close{
+  .header__main_ham_menu_close {
     left: 23rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .header__main_ham_menu{
+  .header__main_ham_menu {
     left: 19rem;
   }
-  .header__main_ham_menu_close{
+  .header__main_ham_menu_close {
     left: 19rem;
   }
 }
