@@ -549,6 +549,10 @@ a {
 }
 .dark_theme .header {
   background-color: #18191a;
+  color: #eee;
+}
+.dark_theme .header .header_sidemenu_link a{
+  color: #eee;
 }
 .dark_theme .header .header_a_link {
   color: #eee;
@@ -756,6 +760,9 @@ a {
     height: 13px;
     width: 13px;
   }
+  .dark_theme #toggle:after{
+    left: 14px;
+  }
   .home_hero_socialLinks {
     padding: 0.3rem 0.8rem 0.3rem 0.2rem;
   }
@@ -830,12 +837,12 @@ a {
   } */
   .header__main_ham_menu {
     position: absolute;
-    left: 27rem;
+    left: 28rem;
     top: 19px;
   }
   .header__main_ham_menu_close {
     position: absolute;
-    left: 27rem;
+    left: 28rem;
     top: 19px;
   }
   .header_main.toggle_hamburger_menu .header_hamburgerMenu_close_contain {
@@ -900,9 +907,18 @@ a {
     height: 11.5rem;
   }
   .header__main_ham_menu{
-    left: 22rem;
+    left: 23rem;
   }
   .header__main_ham_menu_close{
-    left: 22rem;
+    left: 23rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header__main_ham_menu{
+    left: 19rem;
+  }
+  .header__main_ham_menu_close{
+    left: 19rem;
   }
 }
