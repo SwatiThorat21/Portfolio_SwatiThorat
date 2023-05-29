@@ -899,4 +899,10 @@ a {
   .card_top {
     height: 11.5rem;
   }
+  .header__main_ham_menu{
+    left: 22rem;
+  }
+  .header__main_ham_menu_close{
+    left: 22rem;
+  }
 }
