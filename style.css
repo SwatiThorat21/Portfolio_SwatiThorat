@@ -311,13 +311,13 @@ a {
   margin: auto;
   line-height: 1.6;
 }
-.projects_content {
+/* .projects_cards_wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .project_img_container {
   width: 15rem;
@@ -628,6 +628,68 @@ a {
 .dark_theme .resume_container .open_resume_container a:hover {
   color: #2c2929;
 }
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #facf0f;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
 @media only screen and (max-width: 1200px) {
   .header_a_link {
     padding: 1.2rem 1.2rem;

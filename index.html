@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swati Thorat | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -17,8 +18,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -116,6 +116,11 @@
                 </a>
             </div>
         </div>
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
     </section>
     <section id="about" class="aboutMe">
         <div class="aboutMe_container">
@@ -138,8 +143,9 @@
                             I discovered my interest in front-end web development about a year ago. Prior to discovering
                             my interest in front-end web development, I worked as a Proposal (chemical) Engineer for
                             approximately six
-                            years. Initially, I started with <strong>HTML & CSS</strong> and then progressed towards
-                            <strong>JavaScript & jQuery</strong>
+                            years. Initially, I started with <strong>HTML, CSS & Javascript</strong> and then progressed
+                            towards
+                            <strong>ReactJS & NodeJS</strong>
                             to create interactive websites.
                         </p>
                         <p class="aboutMe_main_info_para">
@@ -156,16 +162,24 @@
                         <div class="skill">HTML</div>
                         <div class="skill">CSS</div>
                         <div class="skill">Javascript</div>
-                        <div class="skill">JQuery</div>
+                        <div class="skill">ReactJS</div>
                         <div class="skill">GitHub</div>
                         <div class="skill">Responsive Design</div>
                         <div class="skill">Firebase</div>
                         <div class="skill">Bootstrap</div>
                         <div class="skill">Tailwind CSS</div>
+                        <div class="skill">NodeJS</div>
+                        <div class="skill">Express.js</div>
+                        <div class="skill">MongoDB</div>
                     </div>
                 </div>
             </div>
         </div>
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
     </section>
     <section id="projects" class="projectsSection">
         <div class="projectsMain_container">
@@ -177,50 +191,176 @@
                     Here you will find some of the personal and client projects that I created.
                 </span>
             </h2>
-            <div class="projects_content">
-                <div class="projects_card">
-                    <div class="card_heading_contain">
-                        <h2 class="projectCard_heading">
+            <div class="projects_cards_wrapper">
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
                             Awesomehunt.org
+                            <small>HTML, CSS, Bulma</small>
                         </h2>
                     </div>
-                    <div class="card_top">
-                        <div class="project_img_container">
-                            <img src="images/awesomehunt.png" alt="Awesomehunt" class="project_image">
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            AwesomeHunt, a website for community-curated lists of learning
+                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
+                            CSS, and the Bulma
+                            framework.
                         </div>
-                        <div class="project_skills">
-                            <div class="project_skill">HTML</div>
-                            <div class="project_skill">CSS</div>
-                            <div class="project_skill">Bulma</div>
-                        </div>
-                    </div>
-                    <div class="cardInfo_icons_container">
-                        <button class="cardBtn_icon">
-                            <a href="https://github.com/virajvchavan/awesomelists" target="_blank" title="Github Link">
-                                <i class="fa-brands fa-github cardIcon"></i>
-                            </a>
-                        </button>
-                        <button class="cardBtn_icon">
-                            <a href="https://awesomehunt.org/" target="_blank" title="Launch Site">
-                                <i class="fa-solid fa-paper-plane cardIcon"></i>
-                            </a>
-                        </button>
-                        <button class="cardBtn_icon arrow">
-                            <i class="fa-sharp fa-solid fa-angle-up cardIcon"></i>
-                            <i class="fa-sharp fa-solid fa-angle-down cardIcon"></i>
-                        </button>
-                        <div class="project_info">
-                            <p class="project_info_para">AwesomeHunt, a website for community-curated lists of learning
-                                resources on various topics.
-                            </p>
-                            <p class="project_info_para">
-                                Developed the UI of the website awesomehunt.org using HTML, CSS, and the Bulma
-                                framework.
-                            </p>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="projects_card">
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Awesomehunt.org
+                            <small>HTML, CSS, Bulma</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            AwesomeHunt, a website for community-curated lists of learning
+                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
+                            CSS, and the Bulma
+                            framework.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Awesomehunt.org
+                            <small>HTML, CSS, Bulma</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            AwesomeHunt, a website for community-curated lists of learning
+                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
+                            CSS, and the Bulma
+                            framework.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Awesomehunt.org
+                            <small>HTML, CSS, Bulma</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            AwesomeHunt, a website for community-curated lists of learning
+                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
+                            CSS, and the Bulma
+                            framework.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Awesomehunt.org
+                            <small>HTML, CSS, Bulma</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            AwesomeHunt, a website for community-curated lists of learning
+                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
+                            CSS, and the Bulma
+                            framework.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Awesomehunt.org
+                            <small>HTML, CSS, Bulma</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            AwesomeHunt, a website for community-curated lists of learning
+                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
+                            CSS, and the Bulma
+                            framework.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="projects_card">
                     <div class="card_heading_contain">
                         <h2 class="projectCard_heading">
                             Twitter Clone Full-stack
@@ -525,7 +665,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
