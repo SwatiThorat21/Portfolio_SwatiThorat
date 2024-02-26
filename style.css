@@ -842,6 +842,9 @@ a {
   .projects_heading_sub {
     font-size: 1rem;
   }
+  .arrows{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 444px) {
@@ -851,6 +854,7 @@ a {
   .header__main_ham_menu_close {
     left: 23rem;
   }
+
 }
 
 @media only screen and (max-width: 400px) {
