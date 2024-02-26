@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         zindex++;
+        
       } else {
         // No cards in view
         cardContainer.classList.add("showing");
@@ -59,4 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+  let cardBtnIcons = document.querySelectorAll(".cardBtn_icon a");
+  cardBtnIcons.forEach((anchor) => {
+    anchor.addEventListener("click", (event) => {
+      event.stopPropagation(); 
+    });
+  });
 });
+
