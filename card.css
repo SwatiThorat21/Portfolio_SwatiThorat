@@ -11,7 +11,7 @@
 }
 body {
   background: var(--lightBG);
-  color: var(--darkGrey);
+  color: var(--darkGrey) !important;
   font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
 }
@@ -113,11 +113,13 @@ div.card .card-title h2 small {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.025em;
+  color: var(--darkGrey) !important;
 }
 div.card .card-description {
   padding: 0 15px 10px;
   position: relative;
   font-size: 14px;
+  color: var(--darkGrey) !important;
 }
 div.card .card-actions {
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
@@ -175,6 +177,7 @@ div.card.show .flap1 {
 div.card.show .flap2 {
   transition: all 0.3s 0.2s ease-out;
 }
+
 @media only screen and (max-width: 444px) {
   div.card {
     margin: 1rem;
