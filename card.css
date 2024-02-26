@@ -192,9 +192,11 @@ div.card.show .flap2 {
   }
   div.card .card-title a.toggle-info span.left {
     right: 10px;
+    transform: rotate(45deg);
   }
   div.card .card-title a.toggle-info span.right {
     left: 10px;
+    transform: rotate(-45deg);
   }
   div.card .card-title h2{
     font-size: 20px;
