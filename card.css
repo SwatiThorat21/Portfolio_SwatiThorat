@@ -176,7 +176,6 @@ div.card.show .flap2 {
   transition: all 0.3s 0.2s ease-out;
 }
 @media only screen and (max-width: 444px) {
-
   div.card {
     margin: 1rem;
     max-width: 250px;
@@ -184,5 +183,20 @@ div.card.show .flap2 {
   }
   div.card img {
     max-width: 250px;
+  }
+  div.card .card-title a.toggle-info {
+    right: 9px;
+    height: 25px;
+    width: 25px;
+    top: 16px;
+  }
+  div.card .card-title a.toggle-info span.left {
+    right: 10px;
+  }
+  div.card .card-title a.toggle-info span.right {
+    left: 10px;
+  }
+  div.card .card-title h2{
+    font-size: 20px;
   }
 }
