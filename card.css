@@ -175,3 +175,14 @@ div.card.show .flap1 {
 div.card.show .flap2 {
   transition: all 0.3s 0.2s ease-out;
 }
+@media only screen and (max-width: 444px) {
+
+  div.card {
+    margin: 1rem;
+    max-width: 250px;
+    width: 250px;
+  }
+  div.card img {
+    max-width: 250px;
+  }
+}

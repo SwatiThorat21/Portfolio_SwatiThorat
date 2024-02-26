@@ -628,7 +628,7 @@ a {
   .aboutMe_container {
     width: 90%;
   }
- 
+
   .dark_theme #toggle::after {
     box-shadow: 7px 7px #15181f;
     top: -3px;
@@ -842,7 +842,7 @@ a {
   .projects_heading_sub {
     font-size: 1rem;
   }
-  .arrows{
+  .arrows {
     display: none;
   }
 }
@@ -854,7 +854,11 @@ a {
   .header__main_ham_menu_close {
     left: 23rem;
   }
-
+  .card {
+    margin: 1rem;
+    max-width: 250px;
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
