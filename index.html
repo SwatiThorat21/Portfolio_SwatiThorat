@@ -1,517 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swati Thorat | Frontend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="card.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swati Thorat | Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer building production web applications with React, JavaScript, Python Flask, Node.js, and SQL/NoSQL databases.">
+  <link rel="canonical" href="https://swatithorat21.github.io/Portfolio_SwatiThorat/">
+  <meta name="theme-color" content="#f6f7f3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Swati Thorat | Full Stack Developer">
+  <meta property="og:description" content="FinTech SaaS, product engineering, and AI-enabled full-stack applications.">
+  <meta property="og:url" content="https://swatithorat21.github.io/Portfolio_SwatiThorat/">
+  <meta property="og:image" content="https://swatithorat21.github.io/Portfolio_SwatiThorat/images/social-preview.png">
+  <meta property="og:image:alt" content="Swati Thorat, Full Stack Developer — FinTech SaaS, product engineering, and AI-enabled applications">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swati Thorat | Full Stack Developer">
+  <meta name="twitter:description" content="FinTech SaaS, product engineering, and AI-enabled full-stack applications.">
+  <meta name="twitter:image" content="https://swatithorat21.github.io/Portfolio_SwatiThorat/images/social-preview.png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Swati Thorat","jobTitle":"Full Stack Developer","url":"https://swatithorat21.github.io/Portfolio_SwatiThorat/","email":"mailto:swatic019@gmail.com","sameAs":["https://github.com/SwatiThorat21","https://www.linkedin.com/in/swati-thorat-27a3944b/"],"address":{"@type":"PostalAddress","addressLocality":"Navi Mumbai","addressCountry":"IN"}},{"@type":"WebSite","name":"Swati Thorat | Full Stack Developer","url":"https://swatithorat21.github.io/Portfolio_SwatiThorat/"}]}
+  </script>
 </head>
-
 <body>
-    <header class="header">
-        <div class="header_Content">
-            <div class="header_logo_container">
-                <div class="header_logo_img-container">
-                    <img src="images/MyPhoto.png" alt="Swati Thorat Image" class="header_logo_img">
-                </div>
-                <span class="header_logo_name">Swati Thorat</span>
-            </div>
-            <div class="header_main">
-                <div class="hamburger_container" id="hamburger_container">
-                    <div class="header_hamburgerMenu">
-                        <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
-                            alt="hamburger menu" class="header__main_ham_menu">
-                    </div>
-                    <div class="header_hamburgerMenu_close_contain">
-                        <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
-                            alt="hamburger menu close" class="header__main_ham_menu_close">
-                    </div>
-                </div>
-                <ul class="header_links">
-                    <li class="header_link">
-                        <a href="./" class="header_a_link">Home</a>
-                    </li>
-                    <li class="header_link">
-                        <a href="./#about" class="header_a_link">About</a>
-                    </li>
-                    <li class="header_link">
-                        <a href="./#projects" class="header_a_link">Projects</a>
-                    </li>
-                    <li class="header_link">
-                        <a href="./#resume" class="header_a_link">Resume</a>
-                    </li>
-                    <li class="toggleBtn_container">
-                        <input type="checkbox" id="toggle" class="toggle">
-                    </li>
-                </ul>
-                <div class="header_sideMenu">
-                    <div class="header_menuContent">
-                        <ul class="header_menuLinks">
-                            <li class="header_sidemenu_link">
-                                <a href="./">Home</a>
-                            </li>
-                            <li class="header_sidemenu_link">
-                                <a href="./#about">About</a>
-                            </li>
-                            <li class="header_sidemenu_link">
-                                <a href="./#projects">Projects</a>
-                            </li>
-                            <li class="header_sidemenu_link">
-                                <a href="./#resume">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="home">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#home" aria-label="Swati Thorat, home"><span>ST</span> Swati Thorat</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span class="sr-only">Open navigation</span><span></span><span></span></button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+        <a class="button button-small" href="Swati-Thorat-Resume.pdf" download>Resume <span aria-hidden="true">↓</span></a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Change colour theme"><span class="theme-icon" aria-hidden="true"></span></button>
+    </nav>
+  </header>
 
-    <section class="home_hero">
-        <div class="home_hero_content">
-            <h1 class="hero_content_heading">Hey, I'm Swati Thorat</h1>
-            <div class="home_hero_info">
-                <p>
-                    A highly motivated and self-taught frontend web developer looking for a full-time role to learn new
-                    things and add value to software products.
-                </p>
-            </div>
-        </div>
-        <div class="home_hero_socialLinks">
-            <div class="home_hero_social_link">
-                <a href="https://www.linkedin.com/in/swati-thorat-27a3944b/" class="home_hero_socialIcon_link"
-                    target="_blank">
-                    <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
-                        alt="Swati Thorat LinkedIn" class="home_hero_social_iconImg">
-                </a>
-            </div>
-            <div class="home_hero_social_link">
-                <a href="https://twitter.com/swatic019" class="home_hero_socialIcon_link" target="_blank">
-                    <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
-                        alt="Swati Thorat Twitter" class="home_hero_social_iconImg">
-                </a>
-            </div>
-            <div class="home_hero_social_link">
-                <a href="https://github.com/SwatiThorat21" class="home_hero_socialIcon_link" target="_blank">
-                    <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
-                        alt="Swati Thorat Github" class="home_hero_social_iconImg">
-                </a>
-            </div>
-            <div class="home_hero_social_link">
-                <a href="https://www.hackerrank.com/profile/swatic019" class="home_hero_socialIcon_link"
-                    target="_blank">
-                    <img src="images/hackerrank.png" alt="Swati Thorat hackerrank" class="home_hero_social_iconImg"
-                        style="width: 25px;">
-                </a>
-            </div>
-        </div>
-        <svg class="arrows">
-            <path class="a1" d="M0 0 L30 32 L60 0"></path>
-            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-            <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>
+  <main id="main">
+    <section class="hero section shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">FinTech SaaS · Product Engineering · AI-enabled applications</p>
+        <h1 id="hero-title">Full Stack Developer building dependable products from interface to API.</h1>
+        <p class="hero-lede">I build production web applications across React and JavaScript frontends, Python Flask and Node.js APIs, and SQL/NoSQL databases.</p>
+        <div class="hero-actions"><a class="button" href="#projects">View projects <span aria-hidden="true">↘</span></a><a class="text-link" href="Swati-Thorat-Resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a></div>
+        <div class="social-links"><a href="https://github.com/SwatiThorat21" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/swati-thorat-27a3944b/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-profile" aria-label="Professional profile">
+        <div class="portrait-wrap"><img src="images/MyPhoto.png" width="400" height="400" alt="Portrait of Swati Thorat"></div>
+        <div class="profile-meta"><span>Swati Thorat</span><strong>Full Stack Developer</strong><small>Navi Mumbai, India</small></div>
+      </div>
     </section>
-    <section id="about" class="aboutMe">
-        <div class="aboutMe_container">
-            <h2 class="aboutMe_heading">
-                About Me
-            </h2>
-            <div class="aboutMe_content">
-                <div class="aboutMe_main">
-                    <h3 class="aboutMe_main_title">
-                        Get to know me!
-                    </h3>
-                    <div class="aboutMe_main_info">
-                        <p class="aboutMe_main_info_para">
-                            I'm a <strong>Frontend Web Developer</strong> building the Front-end of Websites and Web
-                            Applications that
-                            leads to the success of the overall product. Check out some of my work in the
-                            <strong>Projects</strong> section.
-                        </p>
-                        <p class="aboutMe_main_info_para">
-                            I discovered my interest in front-end web development about a year ago. Prior to this, I
-                            worked as a Proposal (chemical) Engineer for approximately six years. Initially, I started
-                            with <strong>HTML, CSS, and JavaScript</strong> and then progressed towards <strong> ReactJS </strong> and <strong>NodeJS</strong> to create
-                            interactive websites. Additionally, I have experience working with <strong>Flask</strong> and <strong> MySQL </strong>for
-                            backend development, and I have integrated these with front-end technologies to build
-                            comprehensive applications. My work also includes developing and consuming <strong>APIs</strong> to ensure
-                            seamless data communication between the frontend and backend.
-                        </p>
-                        <p class="aboutMe_main_info_para">
-                            I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If
-                            you have a good
-                            opportunity that matches my skills and experience then don't hesitate to
-                            <strong>contact</strong> me.
-                        </p>
-                    </div>
-                </div>
-                <div class="aboutMe_skills">
-                    <h3 class="aboutMe_skills_title">My Skills</h3>
-                    <div class="skills">
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">Javascript</div>
-                        <div class="skill">ReactJS</div>
-                        <div class="skill">GitHub</div>
-                        <div class="skill">Responsive Design</div>
-                        <div class="skill">Firebase</div>
-                        <div class="skill">Bootstrap</div>
-                        <div class="skill">Tailwind CSS</div>
-                        <div class="skill">MySQL</div>
-                        <div class="skill">FLASK</div>
-                        <div class="skill">NodeJS</div>
-                        <div class="skill">MongoDB</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <svg class="arrows">
-            <path class="a1" d="M0 0 L30 32 L60 0"></path>
-            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-            <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>
-    </section>
-    <section id="projects" class="projectsSection">
-        <div class="projectsMain_container">
-            <h2 class="projects_heading">
-                <span class="projects_heading_main">
-                    Projects
-                </span>
-                <span class="projects_heading_sub">
-                    Here you will find some of the personal and client projects that I created.
-                </span>
-            </h2>
-            <div class="projects_cards_wrapper">
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="images/quiz-app.png" alt="quiz-app" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            Quiz App
-                            <div class="project_skills">
-                                <div class="project_skill">ReactJS</div>
-                                <div class="project_skill">Express.js</div>
-                                <div class="project_skill">MongoDB</div>
-                            </div>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Developed a comprehensive quiz application featuring user
-                            authentication, enabling users to create, share, and manage quizzes
-                            effortlessly.Enhanced user experience by incorporating features such as quiz
-                            sharing, deletion options, and detailed question-wise analysis,
-                            demonstrating a user-centric approach to application development.
-                        </div>
-                        <div class="card-flap flap2">
-                            <div class="card-actions">
-                                <button class="cardBtn_icon">
-                                    <a href="https://github.com/SwatiThorat21/quizzzie" target="_blank"
-                                        title="Github Link">
-                                        <i class="fa-brands fa-github cardIcon"></i>
-                                    </a>
-                                </button>
-                                <button class="cardBtn_icon">
-                                    <a href="https://intellect-quest.netlify.app/" target="_blank" title="Launch Site">
-                                        <i class="fa-solid fa-paper-plane cardIcon"></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="images/awesomehunt.png" alt="awesomehunt" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            Awesomehunt.org
-                            <div class="project_skills">
-                                <div class="project_skill">HTML</div>
-                                <div class="project_skill">CSS</div>
-                                <div class="project_skill">Bulma</div>
-                            </div>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            AwesomeHunt, a website for community-curated lists of learning
-                            resources on various topics. Developed the UI of the website awesomehunt.org using HTML,
-                            CSS, and the Bulma
-                            framework.
-                        </div>
-                        <div class="card-flap flap2">
-                            <div class="card-actions">
-                                <button class="cardBtn_icon">
-                                    <a href="https://github.com/virajvchavan/awesomelists" target="_blank"
-                                        title="Github Link">
-                                        <i class="fa-brands fa-github cardIcon"></i>
-                                    </a>
-                                </button>
-                                <button class="cardBtn_icon">
-                                    <a href="https://awesomehunt.org/" target="_blank" title="Launch Site">
-                                        <i class="fa-solid fa-paper-plane cardIcon"></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="images/twitter1.png" alt="twitter" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            Twitter Clone Full-stack
-                            <div class="project_skills">
-                                <div class="project_skill">HTML</div>
-                                <div class="project_skill">CSS</div>
-                                <div class="project_skill">Javascript</div>
-                                <div class="project_skill">Firebase</div>
-                            </div>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Built a full-stack Twitter clone app that allows users to
-                            create an
-                            account with log-in authentication, post tweets, and search tweets.All the data of tweets
-                            and users are stored in Firebase Realtime Database.
-                        </div>
-                        <div class="card-flap flap2">
-                            <div class="card-actions">
-                                <button class="cardBtn_icon">
-                                    <a href="https://github.com/SwatiThorat21/Twitter_Clone_FullStack" target="_blank"
-                                        title="Github Link">
-                                        <i class="fa-brands fa-github cardIcon"></i>
-                                    </a>
-                                </button>
-                                <button class="cardBtn_icon">
-                                    <a href="https://swatithorat21.github.io/Twitter_Clone_FullStack/" target="_blank"
-                                        title="Launch Site">
-                                        <i class="fa-solid fa-paper-plane cardIcon"></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="images/pocket-notes.png" alt="notes" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            Pocket-notes
-                            <div class="project_skills">
-                                <div class="project_skill">HTML</div>
-                                <div class="project_skill">CSS</div>
-                                <div class="project_skill">ReactJS</div>
-                            </div>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Conceptualized and developed a dynamic Pocket Notes app using
-                            React, CSS, and JavaScript. Enabled users to create notes within each group, capturing the
-                            date and time of note creation for chronological reference.
-                        </div>
-                        <div class="card-flap flap2">
-                            <div class="card-actions">
-                                <button class="cardBtn_icon">
-                                    <a href="https://github.com/SwatiThorat21/Pocket-Notes" target="_blank"
-                                        title="Github Link">
-                                        <i class="fa-brands fa-github cardIcon"></i>
-                                    </a>
-                                </button>
-                                <button class="cardBtn_icon">
-                                    <a href="https://pocket-notes-rho.vercel.app/" target="_blank" title="Launch Site">
-                                        <i class="fa-solid fa-paper-plane cardIcon"></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="images/joblist-app.png" alt="joblist-app" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            Job Listing App
-                            <div class="project_skills">
-                                <div class="project_skill">ReactJS</div>
-                                <div class="project_skill">Express.js</div>
-                                <div class="project_skill">MongoDB</div>
-                            </div>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            providing users with a comprehensive view of all posted job
-                            opportunities, fostering efficient job exploration. Enabled recruiters to edit and update
-                            job posts seamlessly
-                        </div>
-                        <div class="card-flap flap2">
-                            <div class="card-actions">
-                                <button class="cardBtn_icon">
-                                    <a href="https://github.com/SwatiThorat21/job-listing-app" target="_blank"
-                                        title="Github Link">
-                                        <i class="fa-brands fa-github cardIcon"></i>
-                                    </a>
-                                </button>
-                                <button class="cardBtn_icon">
-                                    <a href="https://jobhirelist.netlify.app/" target="_blank" title="Launch Site">
-                                        <i class="fa-solid fa-paper-plane cardIcon"></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="images/rock-paper-scissor.png" alt="rock-paper-scissor" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>
-                            Rock Paper Scissor Game
-                            <div class="project_skills">
-                                <div class="project_skill">HTML</div>
-                                <div class="project_skill">CSS</div>
-                                <div class="project_skill">Javascript</div>
-                            </div>
-                        </h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Implemented random computer choices to simulate dynamic and
-                            challenging gameplay.Implemented a score tracking system to keep a record of the user's
-                            performance against the computer.
-                        </div>
-                        <div class="card-flap flap2">
-                            <div class="card-actions">
-                                <button class="cardBtn_icon">
-                                    <a href="https://github.com/SwatiThorat21/Rock-Paper-Scissors-Game" target="_blank"
-                                        title="Github Link">
-                                        <i class="fa-brands fa-github cardIcon"></i>
-                                    </a>
-                                </button>
-                                <button class="cardBtn_icon">
-                                    <a href="https://singular-klepon-64e22a.netlify.app/" target="_blank"
-                                        title="Launch Site">
-                                        <i class="fa-solid fa-paper-plane cardIcon"></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+    <section class="section section-tint" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div><p class="section-kicker">About</p><h2 id="about-title">Product thinking backed by production experience.</h2></div>
+        <div class="about-copy"><p>I’m a Full Stack Developer with 3+ years of experience working on B2B fintech SaaS products. I build frontend workflows with JavaScript, React, Bootstrap, and Jinja, and backend REST APIs with Python Flask.</p><p>My work spans MySQL and MongoDB integrations, JWT authentication, role-based authorization, and third-party payment and KYC/document APIs. I’m also expanding this product-engineering foundation into AI-enabled applications that turn external data into useful, explainable workflows.</p><div class="fact-row"><span><strong>Current focus</strong>React + Python/Flask</span><span><strong>Domain</strong>B2B FinTech SaaS</span><span><strong>Next direction</strong>AI-native products</span></div></div>
+      </div>
     </section>
-    <section id="resume">
-        <div class="resume_container">
-            <h2 class="resume_heading">
-                Resume
-            </h2>
-            <div class="open_resume_container">
-                <a href="./Swati_thorat_resume.pdf" target="_blank">Click here to open <strong>Resume</strong></a>
-            </div>
-        </div>
+
+    <section class="section shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="section-kicker">Experience</p><h2 id="experience-title">Building across the product stack.</h2></div><p>Production delivery, freelance product development, and responsive frontend work.</p></div>
+      <div class="timeline">
+        <article class="experience-card featured"><div class="experience-meta"><p>Mar 2024 — Present</p><span>Navi Mumbai</span></div><div><p class="role-type">B2B FinTech SaaS</p><h3>Software Developer <span>— Mystro</span></h3><ul><li>Contribute across LOS, LMS, accounting, CRM, and channel-partner workflows in multiple repositories.</li><li>Build dashboards, UI screens, and multi-step onboarding and loan-processing forms using HTML, Bootstrap, JavaScript, and Jinja.</li><li>Develop Python Flask REST APIs with JWT authentication and role-based authorization.</li><li>Work with MySQL and integrate PhonePe payment and DigiLocker KYC APIs.</li><li>Collaborate with cross-functional teams across product development and production delivery.</li></ul></div></article>
+        <article class="experience-card"><div class="experience-meta"><p>Mar 2023 — Feb 2024</p><span>Navi Mumbai</span></div><div><p class="role-type">Freelance</p><h3>Full Stack Developer <span>— SSP Technology</span></h3><ul><li>Developed a car-rental ERP system using React.</li><li>Implemented vehicle filtering, booking flows, and feedback modules.</li><li>Integrated backend APIs and used React Router for application navigation.</li></ul></div></article>
+        <article class="experience-card"><div class="experience-meta"><p>Oct 2022 — Feb 2023</p><span>Navi Mumbai</span></div><div><p class="role-type">Freelance</p><h3>Frontend Developer <span>— awesomehunt.org</span></h3><ul><li>Designed interfaces with HTML, CSS, and Bulma.</li><li>Built responsive layouts for a content-aggregation platform.</li></ul></div></article>
+      </div>
     </section>
-    <footer class="footer_comtainer">
-        <div class="main_container">
-            <div class="footer_upper">
-                <h2 class="footer_heading">
-                    Social Links
-                </h2>
-                <div class="social_links_icons">
-                    <div class="footer_social_link_contain">
-                        <a href="https://www.linkedin.com/in/swati-thorat-27a3944b/" class="footer_social_link"
-                            target="_blank">
-                            <img src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-                                alt="Swati Thorat LinkedIn" class="footer_social_link_iconImg">
-                        </a>
-                    </div>
-                    <div class="footer_social_link_contain">
-                        <a href="https://twitter.com/swatic019" class="footer_social_link" target="_blank">
-                            <img src="https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png"
-                                alt="Swati Thorat Twitter" class="footer_social_link_iconImg">
-                        </a>
-                    </div>
-                    <div class="footer_social_link_contain">
-                        <a href="https://github.com/SwatiThorat21" class="footer_social_link" target="_blank">
-                            <img src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
-                                alt="Swati Thorat Github" class="footer_social_link_iconImg">
-                        </a>
-                    </div>
-                    <div class="footer_social_link_contain">
-                        <a href="https://www.hackerrank.com/profile/swatic019" class="footer_social_link"
-                            target="_blank">
-                            <img src="images/hackerrank (2).png" alt="Swati Thorat hackerrank"
-                                class="footer_social_link_iconImg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_lower">
-                © Copyright 2023. Made by
-                <a href="" target="_blank">Swati Thorat</a>
 
-            </div>
-        </div>
-    </footer>
-    <script src="index.js"></script>
+    <section class="section section-dark" id="projects" aria-labelledby="projects-title">
+      <div class="shell"><div class="section-heading"><div><p class="section-kicker">Selected work</p><h2 id="projects-title">Products, not just pages.</h2></div><p>Full-stack systems shaped around real workflows, reliability, and useful outcomes.</p></div><div id="project-list" class="project-list"></div></div>
+    </section>
 
+    <section class="section shell" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading"><div><p class="section-kicker">Technical skills</p><h2 id="skills-title">A practical full-stack toolkit.</h2></div><p>Technologies applied across production work and verified projects.</p></div>
+      <div id="skills-grid" class="skills-grid"></div>
+    </section>
+
+    <section class="section section-tint" aria-labelledby="capabilities-title">
+      <div class="shell capabilities"><div><p class="section-kicker">Engineering capabilities</p><h2 id="capabilities-title">How I contribute.</h2></div><ol><li><span>01</span>Building frontend workflows and dashboards</li><li><span>02</span>Designing and consuming REST APIs</li><li><span>03</span>Authentication and role-based authorization</li><li><span>04</span>Relational database integration</li><li><span>05</span>Third-party payment and KYC APIs</li><li><span>06</span>AI-assisted extraction and application workflows</li><li><span>07</span>Debugging, deployment, and production support</li></ol></div>
+    </section>
+
+    <section class="section shell contact" id="contact" aria-labelledby="contact-title">
+      <p class="section-kicker">Contact</p><h2 id="contact-title">Let’s build a product that holds up in production.</h2><p>I’m open to Full Stack, React + Python, and AI-enabled product engineering roles.</p>
+      <a class="contact-email" href="mailto:swatic019@gmail.com">swatic019@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-grid"><span><strong>Location</strong>Navi Mumbai, India</span><a href="https://www.linkedin.com/in/swati-thorat-27a3944b/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong>View profile ↗</a><a href="https://github.com/SwatiThorat21" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong>View repositories ↗</a><span><strong>Resume</strong><a href="Swati-Thorat-Resume.pdf" target="_blank">View</a> · <a href="Swati-Thorat-Resume.pdf" download>Download</a></span></div>
+    </section>
+  </main>
+  <footer><div class="shell"><p>© <span id="year"></span> Swati Thorat</p><a href="#home">Back to top ↑</a></div></footer>
+  <script src="index.js" defer></script>
 </body>
-
 </html>

@@ -1,0 +1,10 @@
+{
+  "name": "swati-thorat-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "validate": "node --check index.js && node scripts/validate-site.mjs",
+    "build": "npm run validate"
+  }
+}
